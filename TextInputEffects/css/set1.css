@@ -48,7 +48,7 @@
 .input__label-content {
 	position: relative;
 	display: block;
-	padding: 1.6em 0;
+	padding: 0.5em 0;
 	width: 100%;
 }
 
@@ -902,14 +902,13 @@
 
 .input__field--madoka {
 	width: 100%;
-	font-size: 100%;
-	background: #fff;
-	border-bottom: 3px solid #2a0;
+	background: transparent;
 	color: #2a0;
 }
 
 .input__label--madoka {
 	position: absolute;
+	font-size: 16px;
 	width: 100%;
 	height: 100%;
 	color: #2a0;
@@ -918,8 +917,6 @@
 }
 
 .input__label-content--madoka {
-	font-size: 16px;
-	margin-top: -4%;
 	-webkit-transform-origin: 0% 50%;
 	transform-origin: 0% 50%;
 	-webkit-transition: -webkit-transform 0.3s;

@@ -1,0 +1,78 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	color: #2a0;
+}
+
+.container {
+	background-image: url('img/ernit background.png');
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+	height: 100vh;
+	position: absolute;
+}
+
+.container .form {
+	background-color: #fff;
+	margin: 0 auto;
+	position: relative;
+	width: 40%;
+	top: 48%;
+  	transform: translateY(-50%);
+  	border-radius: 25px;
+}
+
+#login {
+	color: #fff;
+	background: #fd1;
+	padding: 20px 76px;
+}
+
+#login:hover,
+#login:active {
+	color: yellow;
+	background: #fff;
+	border: 3px solid #fd1;
+}
+
+.redirect {
+	color: #2a0;
+	font-size: 12px;
+}
+
+.redirect:hover,
+.redirect:active {
+	text-decoration: underline;
+	font-size: 12px;
+}
+
+.container {
+	text-align: center;
+}
+
+#name1 {
+	width: 65%;
+	max-width: 245px;
+	margin-right: -13%;
+}
+
+#name2 {
+	width: 63%;
+	max-width: 245px;
+	margin-right: -13%;
+}
+
+.bottom {
+	font-size:12px;
+}
+
+#terms {
+	color: #fd1;
+}
+
+#privacypolicy {
+	color: #fd1;
+}

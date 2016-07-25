@@ -9,7 +9,7 @@
     <title>Ernit HTML Form</title>
 
     <!-- CSS -->
-    <link rel = "stylesheet" type = "text/css" href = "style.css">
+    <link rel = "stylesheet" type = "text/css" href = "css/style.css">
 
     <!-- Creative Button CSS -->
     <link rel = "stylesheet" type = "text/css" href = "CreativeButtons/css/component.css">
@@ -18,6 +18,7 @@
     <!-- Input Form Style CSS-->
     <link rel = "stylesheet" type="text/css" href = "TextInputEffects/css/set1.css">
     <link rel = "stylesheet" type = "text/css" href = "TextInputEffects/css/normalize.css">
+    <script type = "text/javascript" src = "TextInputEffects/js/classie.js"></script>
 
     <!-- Google Fonts -->
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
@@ -25,32 +26,67 @@
 </head>
 <body>
 	<div class = "container">
-		<h1> REGISTER </h1>
+		<div class = "form">
+			<br>
+			<h1> REGISTER </h1>
+			<br>
+			<hr>
+			<p> Register by filling out the fields below. </p>
 
-		<p> Register by filling out the fields below </p>
-
-		<span class="input input--madoka">
-			<input class="input__field input__field--madoka" type="text" id="input-1" />
-			<label class="input__label input__label--madoka" for="input-1">
+			<span class="input input--madoka" id = "name1">
+				<input class="input__field input__field--madoka" type="text" id="input-1">
+				<label class="input__label input__label--madoka" id = "name1" for="input-1">
+					<svg class="graphic graphic--madoka" width="100%" height="100%" viewBox="0 0 404 77" preserveAspectRatio = "none">
+						<path d="m0,0l404,0l0,77l-404,0l0,-77z"></path>
+					</svg>
 					<span class="input__label-content input__label-content--madoka">First name</span>
-			</label>
-		</span>
+				</label>
+			</span>
 
-		<span class="input input--madoka">
-			<input class="input__field input__field--madoka" type="text" id="input-2" />
-			<label class="input__label input__label--madoka" for="input-2">
+			<span class="input input--madoka" id = "name2">
+				<input class="input__field input__field--madoka" type="text" id="input-2">
+				<label class="input__label input__label--madoka" id = "name2" for="input-2">
+					<svg class="graphic graphic--madoka" width="100%" height="100%" viewBox="0 0 404 77" preserveAspectRatio = "none">
+						<path d="m0,0l404,0l0,77l-404,0l0,-77z"></path>
+					</svg>
 					<span class="input__label-content input__label-content--madoka">Last name</span>
-			</label>
-		</span>
+				</label>
+			</span>
 
+			<div class = "email">
+			<span class="input input--madoka">
+				<input class="input__field input__field--madoka" type="text" id="input-3">
+				<label class="input__label input__label--madoka" for="input-3">
+					<svg class="graphic graphic--madoka" width="100%" height="100%" viewBox="0 0 404 77" preserveAspectRatio = "none">
+						<path d="m0,0l404,0l0,77l-404,0l0,-77z"></path>
+					</svg>
+					<span class="input__label-content input__label-content--madoka">Email</span>
+				</label>
+			</span>
+			</div>
 
+			<div class = "password">
+			<span class="input input--madoka">
+				<input class="input__field input__field--madoka" type="text" id="input-4">
+				<label class="input__label input__label--madoka" for="input-4">
+					<svg class="graphic graphic--madoka" width="100%" height="100%" viewBox="0 0 404 77" preserveAspectRatio = "none">
+						<path d="m0,0l404,0l0,77l-404,0l0,-77z"></path>
+					</svg>
+					<span class="input__label-content input__label-content--madoka">Password</span>
+				</label>
+			</span>
+			</div>
 
-		<br><br>
-		<button class = "btn btn-1 btn-1a">CANCEL</button>
-		<button class = "btn btn-1 btn-1a" id = "login">LOGIN</button>
+			<br>
+			<button class = "btn btn-1 btn-1a">CANCEL</button>
+			<button class = "btn btn-1 btn-1a" id = "login">LOGIN</button>
 
-		<br>
-		<a href = "" class = "redirect"> Already registered? Log in here. </a>
+			<br>
+			<a href = "" class = "redirect"> Already registered? Log in here. </a>
+			<div><br></div>
+		</div>
+		<br><br><br><br>
+		<p class = "bottom"> You agree to the ERNIT <a href = "" id = "terms">Terms of Service</a> and <a href="" id ="privacypolicy">Privacy Policy</a> </p>
 	</div>
 </body>
 </html>
