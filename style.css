@@ -1,0 +1,32 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	color: #2a0;
+}
+
+#login {
+	color: #fff;
+	background: #fd1;
+	padding: 20px 76px;
+}
+
+#login:hover,
+#login:active {
+	color: yellow;
+	background: #fff;
+	border: 3px solid #fd1;
+}
+
+.redirect {
+	color: #2a0;
+	font-size: 12px;
+}
+
+.redirect:hover,
+.redirect:active {
+	text-decoration: underline;
+	font-size: 12px;
+}
+
+.container {
+	text-align: center;
+}
