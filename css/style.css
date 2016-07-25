@@ -69,10 +69,50 @@ body {
 	font-size:12px;
 }
 
+.bottom2 {
+	color: #999;
+	font-size: 12px;
+}
+
 #terms {
 	color: #fd1;
 }
 
 #privacypolicy {
 	color: #fd1;
+}
+
+#login2 {
+	color: #fff;
+	background: #2a0;
+	padding: 20px 76px;
+}
+
+#login2:hover,
+#login2:active {
+	color: #2a0;
+	background: #fff;
+	border: 3px solid #2a0;
+}
+
+.forgot {
+	float: left;
+	margin-left: 19%;
+	color: #999;
+}
+
+.forgotpass {
+	text-align: left;
+	margin-left: 10%;
+	font-size: 20px;
+}
+
+#login1 {
+	color: white;
+}
+
+.email1 {
+	text-align: left;
+	margin-left: 7%;
+	width: 100%;
 }
