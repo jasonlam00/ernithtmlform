@@ -161,3 +161,48 @@ a button {
 .password {
 	margin-top: 5%;
 }
+
+@media (max-width: 767px) {
+
+	.container {
+		visibility: hidden;
+	}
+
+	.container .form {
+		visibility: visible;
+		width: 95%;
+		height: 95%;
+		margin-top: 3%;
+	}
+
+	.email1 {
+		width: 80%;
+	}
+
+	#name1 {
+		width: 60%;
+		margin-left: 6%;
+	}
+
+	#name2 {
+		margin-left: 0.4%;
+		width: 61.5%;
+	}
+
+	.email {
+		width: 90%;
+		margin-left: 5%;
+	}
+
+	.password {
+		width: 90%;
+		margin-left: 5%;
+	}
+}
+
+
+
+
+
+
+
