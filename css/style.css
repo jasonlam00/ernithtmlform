@@ -1,3 +1,7 @@
+html {
+	height: 100%;
+}
+
 body {
 	font-family: 'Open Sans', sans-serif;
 	color: #2a0;
@@ -10,23 +14,16 @@ h1 {
 .container {
 	background-image: url('img/ernitbackground.png');
 	background-repeat: no-repeat;
-	background-size: 100% auto;
-	top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-	height: 100vh;
-	position: absolute;
 }
 
 .container .form {
+	text-align: center;
 	background-color: #fff;
 	margin: 0 auto;
 	position: relative;
 	max-height: 553px;
 	width: 504px;
-	top: 48%;
-  	transform: translateY(-50%);
+  	transform: translateY(75px);
   	border-radius: 25px;
   	-moz-box-shadow: 0 0 20px #999;
 	-webkit-box-shadow: 0 0 20px #999;
@@ -245,9 +242,17 @@ a button {
 	height: 57.5px;
 	width: 57.5px;
 	float: left;
-	margin-top: 1.46%;
-	margin-left: 1.4999%;
+	margin-top: 21px;
+	margin-left: 21px;
 }
+
+@media (max-width: 700px) {
+	.logo {
+		width: 0.0001%;
+		height: 0.0001%;
+	}
+}
+
 
 @media (max-width: 510px) {
 
@@ -260,6 +265,7 @@ a button {
 	    right: 0;
 		min-height: 770px;
 		position: absolute;
+		text-align: center;
 	}
 
 	.container .form {
@@ -267,10 +273,16 @@ a button {
 		width: 95%;
 		min-height: 640px;
 		margin-top: 0%;
+		text-align: center;
+		transform: translateY(50px);
 	}
 
 	.bottom {
 		margin-top: -5%;
+	}
+
+	h1 {
+		text-align: center;
 	}
 
 	.logo {
