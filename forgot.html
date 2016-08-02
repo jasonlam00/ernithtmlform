@@ -28,6 +28,13 @@
     <!-- Google Fonts -->
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
 
+	<!-- Input Filled -->
+	<script type="text/javascript">
+	function inputFilled()
+	{
+		document.getElementById("forgotemail").className += " input--filled"; 
+	}
+	</script>
 </head>
 <body>
 	<div class = "container">
@@ -49,7 +56,7 @@
 			
 			<form action =  "">
 				<div class = "email1">
-				<span class="input input--madoka">
+				<span onclick = "inputFilled()" class="input input--madoka" id = "forgotemail">
 					<input class="input__field input__field--madoka" type="text" id="input-3">
 					<label class="input__label input__label--madoka" for="input-3" id = "emaillabel">
 						<svg class="graphic graphic--madoka" width="100%" height="100%" viewBox="0 0 404 77" preserveAspectRatio = "none">

@@ -25,20 +25,28 @@
     <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
 	<script src="bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
 
-    <!-- Google Fonts and JS-->
+    <!-- Google Fonts-->
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
-	<script type="text/javascript" async src = "http://www.google-analytics.com/ga.js"></script>
-	<script type="text/javascript">
-		var _gaq = _gaq || [];
-		_gaq.push(['_setAccount', 'UA-7243260-2']);
-		_gaq.push(['_trackPageview']);
-		(function() {
-		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-		})();
-	</script>
 
+	<!-- Input Filled -->
+	<script type="text/javascript">
+	function inputFilled()
+	{
+		document.getElementById("name1").className += " input--filled"; 
+	}
+	function inputFilled2()
+	{
+		document.getElementById("name2").className += " input--filled"; 
+	}
+	function inputFilled3()
+	{
+		document.getElementById("alignment1").className += " input--filled"; 
+	}
+	function inputFilled4()
+	{
+		document.getElementById("alignment2").className += " input--filled"; 
+	}
+	</script>
 </head>
 
 <body>
@@ -51,7 +59,7 @@
 			<hr>
 			<p class = "registerheader"> Register by filling out the fields below. </p>
 
-			<span class="input input--madoka input--filled" id = "name1">
+			<span onclick = "inputFilled()" class="input input--madoka" id = "name1">
 				<input class="input__field input__field--madoka" type="text" id="input-1">
 				<label class="input__label input__label--madoka" for="input-1">
 					<svg class="graphic graphic--madoka" width="100%" height="100%" viewBox="0 0 404 77" preserveAspectRatio = "none">
@@ -61,7 +69,7 @@
 				</label>
 			</span>
 
-			<span class="input input--madoka" id = "name2">
+			<span onclick = "inputFilled2()" class="input input--madoka" id = "name2">
 				<input class="input__field input__field--madoka" type="text" id="input-2">
 				<label class="input__label input__label--madoka" for="input-2">
 					<svg class="graphic graphic--madoka" width="100%" height="100%" viewBox="0 0 404 77" preserveAspectRatio = "none">
@@ -72,7 +80,7 @@
 			</span>
 
 			<div class = "email">
-			<span class="input input--madoka" id = "alignment1">
+			<span onclick = "inputFilled3()" class="input input--madoka" id = "alignment1">
 				<input class="input__field input__field--madoka" type="text" id="input-3">
 				<label class="input__label input__label--madoka" for="input-3"  id = "alignment1">
 					<svg class="graphic graphic--madoka" width="100%" height="100%" viewBox="0 0 404 77" preserveAspectRatio = "none">
@@ -84,7 +92,7 @@
 			</div>
 
 			<div class = "password">
-			<span class="input input--madoka" id = "alignment2">
+			<span onclick = "inputFilled4()" class="input input--madoka" id = "alignment2">
 				<input class="input__field input__field--madoka" type="text" id="input-4">
 				<label class="input__label input__label--madoka" for="input-4" id = "alignment2">
 					<svg class="graphic graphic--madoka" width="100%" height="100%" viewBox="0 0 404 77" preserveAspectRatio = "none">
