@@ -10,6 +10,7 @@
 
     <!-- CSS -->
     <link rel = "stylesheet" type = "text/css" href = "css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/alert.css">
 
     <!-- Creative Button CSS -->
     <link rel = "stylesheet" type = "text/css" href = "CreativeButtons/css/component.css">
@@ -20,23 +21,28 @@
     <link rel = "stylesheet" type = "text/css" href = "TextInputEffects/css/normalize.css">
     <script type = "text/javascript" src = "TextInputEffects/js/classie.js"></script>
 
+    <!-- Bootstrap JS -->
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	<script src="bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+
     <!-- Google Fonts -->
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
 
 </head>
+
 <body>
 	<div class = "container">
+		<img src="img/logo.png" class = "logo">
 		<div class = "form">
 			<br>
 			<h1> REGISTER </h1>
 			<br>
 			<hr>
-			<p> Register by filling out the fields below. </p>
+			<p class = "registerheader"> Register by filling out the fields below. </p>
 
-			<br>
 			<span class="input input--madoka" id = "name1">
 				<input class="input__field input__field--madoka" type="text" id="input-1">
-				<label class="input__label input__label--madoka" id = "name1" for="input-1">
+				<label class="input__label input__label--madoka" for="input-1">
 					<svg class="graphic graphic--madoka" width="100%" height="100%" viewBox="0 0 404 77" preserveAspectRatio = "none">
 						<path d="m0,0l404,0l0,77l-404,0l0,-77z"></path>
 					</svg>
@@ -46,7 +52,7 @@
 
 			<span class="input input--madoka" id = "name2">
 				<input class="input__field input__field--madoka" type="text" id="input-2">
-				<label class="input__label input__label--madoka" id = "name2" for="input-2">
+				<label class="input__label input__label--madoka" for="input-2">
 					<svg class="graphic graphic--madoka" width="100%" height="100%" viewBox="0 0 404 77" preserveAspectRatio = "none">
 						<path d="m0,0l404,0l0,77l-404,0l0,-77z"></path>
 					</svg>
@@ -55,9 +61,9 @@
 			</span>
 
 			<div class = "email">
-			<span class="input input--madoka">
+			<span class="input input--madoka" id = "alignment1">
 				<input class="input__field input__field--madoka" type="text" id="input-3">
-				<label class="input__label input__label--madoka" for="input-3">
+				<label class="input__label input__label--madoka" for="input-3"  id = "alignment1">
 					<svg class="graphic graphic--madoka" width="100%" height="100%" viewBox="0 0 404 77" preserveAspectRatio = "none">
 						<path d="m0,0l404,0l0,77l-404,0l0,-77z"></path>
 					</svg>
@@ -67,9 +73,9 @@
 			</div>
 
 			<div class = "password">
-			<span class="input input--madoka">
+			<span class="input input--madoka" id = "alignment2">
 				<input class="input__field input__field--madoka" type="text" id="input-4">
-				<label class="input__label input__label--madoka" for="input-4">
+				<label class="input__label input__label--madoka" for="input-4" id = "alignment2">
 					<svg class="graphic graphic--madoka" width="100%" height="100%" viewBox="0 0 404 77" preserveAspectRatio = "none">
 						<path d="m0,0l404,0l0,77l-404,0l0,-77z"></path>
 					</svg>
@@ -79,17 +85,18 @@
 			</div>
 
 			<br>
-			<button class = "btn btn-1 btn-1a" formaction = "login.html">CANCEL</button>
+			<button class = "btn btn-1 btn-1a" formaction = "login.html" id = "cancel">CANCEL</button>
 			<button class = "btn btn-1 btn-1a" id = "login2">LOGIN</button>
 
 			<br>
 			<a href = "login.html" class = "redirect"> Already registered? Log in here. </a>
 			<div><br></div>
 		</div>
-		<br><br>
+		<br><br><br><br>
 		<p class = "bottom"> You agree to the ERNIT <a href = "" id = "terms">Terms of Service</a> and <a href="" id ="privacypolicy">Privacy Policy</a> </p>
 	</div>
 </body>
+
 </html>
 
 

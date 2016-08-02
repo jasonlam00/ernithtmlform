@@ -10,6 +10,7 @@
 
     <!-- CSS -->
     <link rel = "stylesheet" type = "text/css" href = "css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/alert.css"></link>
 
     <!-- Creative Button CSS -->
     <link rel = "stylesheet" type = "text/css" href = "CreativeButtons/css/component.css">
@@ -20,12 +21,23 @@
     <link rel = "stylesheet" type = "text/css" href = "TextInputEffects/css/normalize.css">
     <script type = "text/javascript" src = "TextInputEffects/js/classie.js"></script>
 
+    <!-- Bootstrap JS -->
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	<script src="bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+
     <!-- Google Fonts -->
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
 
 </head>
 <body>
 	<div class = "container">
+		<div class="alert alert-danger alert-dismissible fade in" id = "alerttop"role="alert">
+		  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+		    <span aria-hidden="true">&times;</span>
+		  </button>
+		  &nbsp&nbsp&nbsp&nbsp<strong>Ouch!</strong> Your email doesn't exist in our records. Please try with another (<a href = "index.html" class = "alert-link">or register here</a>).
+		</div>
+		<img src="img/logo.png" class = "logo">
 		<div class = "form">
 			<br>
 			<h1> FORGOT PASSWORD? </h1>
@@ -48,13 +60,12 @@
 				</span>
 				</div>
 
-				<br><br><br>
-				<button class = "btn btn-1 btn-1a" formaction = "login.html">BACK</button>
-				<button class = "btn btn-1 btn-1a" id = "login2" type = "submit">SEND</button>
+				<br><br><br><br>
+				<button class = "btn btn-1 btn-1a" formaction = "login.html" id = "back">BACK</button>
+				<button class = "btn btn-1 btn-1a" id = "login2-1" type = "submit">SEND</button>
 
 			</form>
 
-			<br>
 			<div><br></div>
 		</div>
 		<br><br><br><br>
