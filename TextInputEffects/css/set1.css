@@ -917,8 +917,8 @@
 }
 
 .input__label-content--madoka {
-	-webkit-transform-origin: 0% 50%;
-	transform-origin: 0% 50%;
+	-webkit-transform-origin: 0% -175%;
+	transform-origin: 0% -175%;
 	-webkit-transition: -webkit-transform 0.3s;
 	transition: transform 0.3s;
 }
